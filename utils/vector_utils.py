@@ -19,7 +19,7 @@ def subtract(v1, v2):
 
 
 def length(v):
-    return sqrt(sum([coord ** 2 for corrd in v]))
+    return sqrt(sum([coord ** 2 for coord in v]))
 
 
 def dot(u, v):
@@ -75,7 +75,7 @@ def angle_between(v1, v2):
 
 def cross(u, v):
     assert len(u) == 3 and len(v) == 3, "length of u and v has to be 3." \
-                                        f"len of u is {len(u)} and len of v is {len(v)"
+                                        f"len of u is {len(u)} and len of v is {len(v)}"
     ux, uy, uz = u
     vx, vy, vz = v
     return (uy * vz - uz * vy, uz * vx - ux * vz, ux * vy - uy * vx)
